@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.comentaris {
+  margin-top: 3em;
+  padding: 1em;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.comentaris h2 {
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.comentari {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+  
+.comentari h3 {
+  margin: 0 0 0.5em;
+  font-size: 1em;
+  color: #555;
+}
+
+
+#banner{
+    display: flex;
+    justify-content: center;
+}
+#titol{
+    display: flex;
+    align-items: center;
+    flex: 5;
+}
+#logo{
+    width: 150px;
+}
+
+#nav{
+    border-bottom: 1px solid #CC196C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    width: 8em;
+    text-align: center;
+    font-size: 1.25em;
+       
+}
+html {
+  scrollbar-color: transparent;
+  scrollbar-width: thin;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    color: #CC196C;
+    transition: color 0.1s;
+    transition: font-size 1s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    color: #CC196C;
+    font-size: 1.25em;
+}
+/* fons del body i el main no es mou nomes es mouen les caixes / divs  */
+body{
+    overflow-x: hidden;
+    min-height: 200vh; 
+    background-image: url('../img/fons.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+}
+main {
+    margin-top: 3em;
+    min-height: 200vh; 
+    background-image: url('../img/fons.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+}
+#caixa4 h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    color: #CC196C;
+    font-size: 1em;
+
+}
+#text{
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    color: #CC196C;
+}
+.caixa{
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+    flex: 1;
+    padding: 0.5em;
+}
+
+
+.caixa2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+}
+
+#caixa1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'RetroFont', monospace;
+    font-size: 48px;
+    color: #FFD700;
+    text-shadow:
+      2px 2px 0 #000066,
+      4px 4px 0 #000033;
+}
+#caixa1 img{
+    border-radius: 10vh 10vh;
+}
+
+#caixa4 a{
+    margin-top: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #CC196C;
+    border: 2px solid black;
+    padding: 1em;
+    border-radius: 7px;
+    transition-duration: 1s;
+    font-family: 'Press Start 2P', monospace;
+    width: 14vh;
+    display: block;
+
+}
+#caixa4 a:hover{
+    color: black;
+    background-color: #FFD700;
+    font-size: 1.2em;
+    font-family: 'Press Start 2P', monospace;
+    width: 16vh;
+}
+
+#nave {
+    flex: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+#gridWrapper{
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(3,1fr);
+    
+}
+
+#gridWrapper{grid-template: repeat(1,1fr) / repeat(3,1fr);
+    width: 100vw;}
+#caixa1 img{
+    width: 40vw;
+}
+
+#caixa4 p{
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+#caixa1{grid-area: 1 / 1 / span 1 / span 1;}
+#caixa2{grid-area: 1 / 2 / span 1 / span 1;}
+#caixa3{grid-area: 1 / 2 / span 1 / span 1;}
+#caixa4{grid-area: 1 / 2 / span 1 / span 1;}
+#caixa5{grid-area: 2 / 1 / span 1 / span 1;}
+
+
+      
+    
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px){
+        #caixa1 img{
+            width: 40vw;
+        }
+        #gridWrapper{grid-template: repeat(1,1fr) / repeat(2,2fr);}
+        #caixa1{grid-area: 1 / 1 / span 1 / span 1;max-width: 30vw;}
+        #caixa2{grid-area: 1 / 4 / span 1 / span 1;min-width: 30vw;}
+        #caixa3{grid-area: 1 / 4 / span 1 / span 1;min-width: 30vw;}
+        #caixa4{grid-area: 1 / 4 / span 1 / span 1;min-width: 40vw;}
+      
+        
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        #caixa1 img{
+            width: 40vw;
+        }
+        #gridWrapper{grid-template: repeat(1,1fr) / repeat(3,1fr);}
+        #caixa1{grid-area: 1 / 1 / span 1 / span 1; min-width: 40vw;}
+        #caixa2{grid-area: 1 / 3 / span 1 / span 1; min-width: 40vw;}
+        #caixa3{grid-area: 1 / 3/ span 1 / span 1;min-width: 40vw;}
+        #caixa4{grid-area: 1 / 2/ span 1 / span 1;min-width: 40vw;}
+
+    }
+    
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        #caixa1 img{
+            width: 30vw;
+        }
+      #gridWrapper{grid-template: repeat(1,1fr) / repeat(3,1fr);}
+      #caixa1{grid-area: 1 / 1 / span 1 / span 1;}
+      #caixa2{grid-area: 1 / 3 / span 1 / span 1;}
+      #caixa3{grid-area: 1 / 3 / span 1 / span 1;}
+      #caixa4{grid-area: 1 / 3 / span 1 / span 1;}
+}
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        #caixa1 img{
+            width: 30vw;
+        }
+      #gridWrapper{grid-template: repeat(1,1fr) / repeat(3,1fr);}
+      #caixa1{grid-area: 1 / 1 / span 1 / span 1;}
+      #caixa2{grid-area: 1 / 3 / span 1 / span 1;}
+      #caixa3{grid-area: 1 / 3 / span 1 / span 1;}
+      #caixa4{grid-area: 1 / 3 / span 1 / span 1;}
+    }
